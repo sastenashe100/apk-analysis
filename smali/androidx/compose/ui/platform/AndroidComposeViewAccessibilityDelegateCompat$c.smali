@@ -1,0 +1,264 @@
+# classes3.dex
+
+.class public final Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$c;
+.super Ljava/lang/Object;
+.source "AndroidComposeViewAccessibilityDelegateCompat.android.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "c"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\bÃ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\b\u0010\tJ\u0018\u0010\u0007\u001a\u00020\u00062\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u0004H\u0007¨\u0006\n"
+    }
+    d2 = {
+        "Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$c;",
+        "",
+        "La4/y;",
+        "info",
+        "Landroidx/compose/ui/semantics/SemanticsNode;",
+        "semanticsNode",
+        "",
+        "a",
+        "<init>",
+        "()V",
+        "ui_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+.end annotation
+
+
+# static fields
+.field public static final a:Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$c;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 1
+
+    .line 1
+    new-instance v0, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$c;
+
+    .line 3
+    invoke-direct {v0}, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$c;-><init>()V
+
+    .line 6
+    sput-object v0, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$c;->a:Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$c;
+
+    .line 8
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .registers 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static final a(La4/y;Landroidx/compose/ui/semantics/SemanticsNode;)V
+    .registers 6
+    .annotation runtime Lkotlin/jvm/JvmStatic;
+    .end annotation
+
+    .line 1
+    invoke-static {p1}, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat_androidKt;->b(Landroidx/compose/ui/semantics/SemanticsNode;)Z
+
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_84
+
+    .line 7
+    invoke-virtual {p1}, Landroidx/compose/ui/semantics/SemanticsNode;->v()Landroidx/compose/ui/semantics/l;
+
+    .line 10
+    move-result-object v0
+
+    .line 11
+    sget-object v1, Landroidx/compose/ui/semantics/k;->a:Landroidx/compose/ui/semantics/k;
+
+    .line 13
+    invoke-virtual {v1}, Landroidx/compose/ui/semantics/k;->p()Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+
+    .line 16
+    move-result-object v2
+
+    .line 17
+    invoke-static {v0, v2}, Landroidx/compose/ui/semantics/SemanticsConfigurationKt;->a(Landroidx/compose/ui/semantics/l;Landroidx/compose/ui/semantics/SemanticsPropertyKey;)Ljava/lang/Object;
+
+    .line 20
+    move-result-object v0
+
+    .line 21
+    check-cast v0, Landroidx/compose/ui/semantics/a;
+
+    .line 23
+    if-eqz v0, :cond_27
+
+    .line 25
+    new-instance v2, La4/y$a;
+
+    .line 27
+    const v3, 0x1020046
+
+    .line 30
+    invoke-virtual {v0}, Landroidx/compose/ui/semantics/a;->b()Ljava/lang/String;
+
+    .line 33
+    move-result-object v0
+
+    .line 34
+    invoke-direct {v2, v3, v0}, La4/y$a;-><init>(ILjava/lang/CharSequence;)V
+
+    .line 37
+    invoke-virtual {p0, v2}, La4/y;->b(La4/y$a;)V
+
+    .line 40
+    :cond_27
+    invoke-virtual {p1}, Landroidx/compose/ui/semantics/SemanticsNode;->v()Landroidx/compose/ui/semantics/l;
+
+    .line 43
+    move-result-object v0
+
+    .line 44
+    invoke-virtual {v1}, Landroidx/compose/ui/semantics/k;->m()Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+
+    .line 47
+    move-result-object v2
+
+    .line 48
+    invoke-static {v0, v2}, Landroidx/compose/ui/semantics/SemanticsConfigurationKt;->a(Landroidx/compose/ui/semantics/l;Landroidx/compose/ui/semantics/SemanticsPropertyKey;)Ljava/lang/Object;
+
+    .line 51
+    move-result-object v0
+
+    .line 52
+    check-cast v0, Landroidx/compose/ui/semantics/a;
+
+    .line 54
+    if-eqz v0, :cond_46
+
+    .line 56
+    new-instance v2, La4/y$a;
+
+    .line 58
+    const v3, 0x1020047
+
+    .line 61
+    invoke-virtual {v0}, Landroidx/compose/ui/semantics/a;->b()Ljava/lang/String;
+
+    .line 64
+    move-result-object v0
+
+    .line 65
+    invoke-direct {v2, v3, v0}, La4/y$a;-><init>(ILjava/lang/CharSequence;)V
+
+    .line 68
+    invoke-virtual {p0, v2}, La4/y;->b(La4/y$a;)V
+
+    .line 71
+    :cond_46
+    invoke-virtual {p1}, Landroidx/compose/ui/semantics/SemanticsNode;->v()Landroidx/compose/ui/semantics/l;
+
+    .line 74
+    move-result-object v0
+
+    .line 75
+    invoke-virtual {v1}, Landroidx/compose/ui/semantics/k;->n()Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+
+    .line 78
+    move-result-object v2
+
+    .line 79
+    invoke-static {v0, v2}, Landroidx/compose/ui/semantics/SemanticsConfigurationKt;->a(Landroidx/compose/ui/semantics/l;Landroidx/compose/ui/semantics/SemanticsPropertyKey;)Ljava/lang/Object;
+
+    .line 82
+    move-result-object v0
+
+    .line 83
+    check-cast v0, Landroidx/compose/ui/semantics/a;
+
+    .line 85
+    if-eqz v0, :cond_65
+
+    .line 87
+    new-instance v2, La4/y$a;
+
+    .line 89
+    const v3, 0x1020048
+
+    .line 92
+    invoke-virtual {v0}, Landroidx/compose/ui/semantics/a;->b()Ljava/lang/String;
+
+    .line 95
+    move-result-object v0
+
+    .line 96
+    invoke-direct {v2, v3, v0}, La4/y$a;-><init>(ILjava/lang/CharSequence;)V
+
+    .line 99
+    invoke-virtual {p0, v2}, La4/y;->b(La4/y$a;)V
+
+    .line 102
+    :cond_65
+    invoke-virtual {p1}, Landroidx/compose/ui/semantics/SemanticsNode;->v()Landroidx/compose/ui/semantics/l;
+
+    .line 105
+    move-result-object p1
+
+    .line 106
+    invoke-virtual {v1}, Landroidx/compose/ui/semantics/k;->o()Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+
+    .line 109
+    move-result-object v0
+
+    .line 110
+    invoke-static {p1, v0}, Landroidx/compose/ui/semantics/SemanticsConfigurationKt;->a(Landroidx/compose/ui/semantics/l;Landroidx/compose/ui/semantics/SemanticsPropertyKey;)Ljava/lang/Object;
+
+    .line 113
+    move-result-object p1
+
+    .line 114
+    check-cast p1, Landroidx/compose/ui/semantics/a;
+
+    .line 116
+    if-eqz p1, :cond_84
+
+    .line 118
+    new-instance v0, La4/y$a;
+
+    .line 120
+    const v1, 0x1020049
+
+    .line 123
+    invoke-virtual {p1}, Landroidx/compose/ui/semantics/a;->b()Ljava/lang/String;
+
+    .line 126
+    move-result-object p1
+
+    .line 127
+    invoke-direct {v0, v1, p1}, La4/y$a;-><init>(ILjava/lang/CharSequence;)V
+
+    .line 130
+    invoke-virtual {p0, v0}, La4/y;->b(La4/y$a;)V
+
+    .line 133
+    :cond_84
+    return-void
+.end method

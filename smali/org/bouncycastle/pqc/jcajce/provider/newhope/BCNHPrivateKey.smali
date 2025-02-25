@@ -1,0 +1,289 @@
+# classes9.dex
+
+.class public Lorg/bouncycastle/pqc/jcajce/provider/newhope/BCNHPrivateKey;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lorg/bouncycastle/pqc/jcajce/interfaces/NHPrivateKey;
+
+
+# static fields
+.field private static final serialVersionUID:J = 0x1L
+
+
+# instance fields
+.field public transient a:Lrk0/a;
+
+.field public transient b:Lhj0/c0;
+
+
+# direct methods
+.method public constructor <init>(Lqj0/b;)V
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    invoke-virtual {p0, p1}, Lorg/bouncycastle/pqc/jcajce/provider/newhope/BCNHPrivateKey;->a(Lqj0/b;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lrk0/a;)V
+    .registers 2
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lorg/bouncycastle/pqc/jcajce/provider/newhope/BCNHPrivateKey;->a:Lrk0/a;
+
+    return-void
+.end method
+
+.method private readObject(Ljava/io/ObjectInputStream;)V
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;,
+            Ljava/lang/ClassNotFoundException;
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p1}, Ljava/io/ObjectInputStream;->defaultReadObject()V
+
+    .line 4
+    invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readObject()Ljava/lang/Object;
+
+    .line 7
+    move-result-object p1
+
+    .line 8
+    check-cast p1, [B
+
+    .line 10
+    invoke-static {p1}, Lqj0/b;->n(Ljava/lang/Object;)Lqj0/b;
+
+    .line 13
+    move-result-object p1
+
+    .line 14
+    invoke-virtual {p0, p1}, Lorg/bouncycastle/pqc/jcajce/provider/newhope/BCNHPrivateKey;->a(Lqj0/b;)V
+
+    .line 17
+    return-void
+.end method
+
+.method private writeObject(Ljava/io/ObjectOutputStream;)V
+    .registers 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p1}, Ljava/io/ObjectOutputStream;->defaultWriteObject()V
+
+    .line 4
+    invoke-virtual {p0}, Lorg/bouncycastle/pqc/jcajce/provider/newhope/BCNHPrivateKey;->getEncoded()[B
+
+    .line 7
+    move-result-object v0
+
+    .line 8
+    invoke-virtual {p1, v0}, Ljava/io/ObjectOutputStream;->writeObject(Ljava/lang/Object;)V
+
+    .line 11
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lqj0/b;)V
+    .registers 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p1}, Lqj0/b;->m()Lhj0/c0;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    iput-object v0, p0, Lorg/bouncycastle/pqc/jcajce/provider/newhope/BCNHPrivateKey;->b:Lhj0/c0;
+
+    .line 7
+    invoke-static {p1}, Lwk0/a;->b(Lqj0/b;)Lzj0/a;
+
+    .line 10
+    move-result-object p1
+
+    .line 11
+    check-cast p1, Lrk0/a;
+
+    .line 13
+    iput-object p1, p0, Lorg/bouncycastle/pqc/jcajce/provider/newhope/BCNHPrivateKey;->a:Lrk0/a;
+
+    .line 15
+    return-void
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .registers 3
+
+    .line 1
+    instance-of v0, p1, Lorg/bouncycastle/pqc/jcajce/provider/newhope/BCNHPrivateKey;
+
+    .line 3
+    if-nez v0, :cond_6
+
+    .line 5
+    const/4 p1, 0x0
+
+    .line 6
+    return p1
+
+    .line 7
+    :cond_6
+    check-cast p1, Lorg/bouncycastle/pqc/jcajce/provider/newhope/BCNHPrivateKey;
+
+    .line 9
+    iget-object v0, p0, Lorg/bouncycastle/pqc/jcajce/provider/newhope/BCNHPrivateKey;->a:Lrk0/a;
+
+    .line 11
+    invoke-virtual {v0}, Lrk0/a;->a()[S
+
+    .line 14
+    move-result-object v0
+
+    .line 15
+    iget-object p1, p1, Lorg/bouncycastle/pqc/jcajce/provider/newhope/BCNHPrivateKey;->a:Lrk0/a;
+
+    .line 17
+    invoke-virtual {p1}, Lrk0/a;->a()[S
+
+    .line 20
+    move-result-object p1
+
+    .line 21
+    invoke-static {v0, p1}, Lorg/bouncycastle/util/a;->d([S[S)Z
+
+    .line 24
+    move-result p1
+
+    .line 25
+    return p1
+.end method
+
+.method public final getAlgorithm()Ljava/lang/String;
+    .registers 2
+
+    .line 1
+    const-string v0, "NH"
+
+    .line 3
+    return-object v0
+.end method
+
+.method public getEncoded()[B
+    .registers 3
+
+    .line 1
+    :try_start_0
+    iget-object v0, p0, Lorg/bouncycastle/pqc/jcajce/provider/newhope/BCNHPrivateKey;->a:Lrk0/a;
+
+    .line 3
+    iget-object v1, p0, Lorg/bouncycastle/pqc/jcajce/provider/newhope/BCNHPrivateKey;->b:Lhj0/c0;
+
+    .line 5
+    invoke-static {v0, v1}, Lwk0/b;->a(Lzj0/a;Lhj0/c0;)Lqj0/b;
+
+    .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-virtual {v0}, Lhj0/r;->getEncoded()[B
+
+    .line 12
+    move-result-object v0
+    :try_end_c
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_c} :catch_d
+
+    .line 13
+    return-object v0
+
+    .line 14
+    :catch_d
+    const/4 v0, 0x0
+
+    .line 15
+    return-object v0
+.end method
+
+.method public getFormat()Ljava/lang/String;
+    .registers 2
+
+    .line 1
+    const-string v0, "PKCS#8"
+
+    .line 3
+    return-object v0
+.end method
+
+.method public getKeyParams()Lwj0/a;
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lorg/bouncycastle/pqc/jcajce/provider/newhope/BCNHPrivateKey;->a:Lrk0/a;
+
+    .line 3
+    return-object v0
+.end method
+
+.method public getSecretData()[S
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lorg/bouncycastle/pqc/jcajce/provider/newhope/BCNHPrivateKey;->a:Lrk0/a;
+
+    .line 3
+    invoke-virtual {v0}, Lrk0/a;->a()[S
+
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public hashCode()I
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lorg/bouncycastle/pqc/jcajce/provider/newhope/BCNHPrivateKey;->a:Lrk0/a;
+
+    .line 3
+    invoke-virtual {v0}, Lrk0/a;->a()[S
+
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-static {v0}, Lorg/bouncycastle/util/a;->s([S)I
+
+    .line 10
+    move-result v0
+
+    .line 11
+    return v0
+.end method

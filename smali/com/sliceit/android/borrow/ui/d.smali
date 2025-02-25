@@ -1,0 +1,42 @@
+# classes6.dex
+
+.class public final synthetic Lcom/sliceit/android/borrow/ui/d;
+.super Ljava/lang/Object;
+.source "R8$$SyntheticClass"
+
+# interfaces
+.implements Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$j;
+
+
+# instance fields
+.field public final synthetic a:Lcom/sliceit/android/borrow/ui/TransferAmountFragment;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/sliceit/android/borrow/ui/TransferAmountFragment;)V
+    .registers 2
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    iput-object p1, p0, Lcom/sliceit/android/borrow/ui/d;->a:Lcom/sliceit/android/borrow/ui/TransferAmountFragment;
+
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()V
+    .registers 2
+
+    .line 1
+    iget-object v0, p0, Lcom/sliceit/android/borrow/ui/d;->a:Lcom/sliceit/android/borrow/ui/TransferAmountFragment;
+
+    .line 3
+    invoke-static {v0}, Lcom/sliceit/android/borrow/ui/TransferAmountFragment;->N2(Lcom/sliceit/android/borrow/ui/TransferAmountFragment;)V
+
+    .line 6
+    return-void
+.end method

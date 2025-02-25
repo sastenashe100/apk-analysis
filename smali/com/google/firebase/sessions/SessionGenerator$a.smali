@@ -1,0 +1,94 @@
+# classes.dex
+
+.class public final Lcom/google/firebase/sessions/SessionGenerator$a;
+.super Ljava/lang/Object;
+.source "SessionGenerator.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/firebase/sessions/SessionGenerator;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\b\u0080\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0006\u0010\u0007R\u0011\u0010\u0005\u001a\u00020\u00028F¢\u0006\u0006\u001a\u0004\b\u0003\u0010\u0004¨\u0006\b"
+    }
+    d2 = {
+        "Lcom/google/firebase/sessions/SessionGenerator$a;",
+        "",
+        "Lcom/google/firebase/sessions/SessionGenerator;",
+        "a",
+        "()Lcom/google/firebase/sessions/SessionGenerator;",
+        "instance",
+        "<init>",
+        "()V",
+        "com.google.firebase-firebase-sessions"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x7,
+        0x1
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .registers 2
+
+    .line 1
+    invoke-direct {p0}, Lcom/google/firebase/sessions/SessionGenerator$a;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Lcom/google/firebase/sessions/SessionGenerator;
+    .registers 3
+
+    .line 1
+    sget-object v0, Lfd/c;->a:Lfd/c;
+
+    .line 3
+    invoke-static {v0}, Lfd/l;->a(Lfd/c;)Lfd/f;
+
+    .line 6
+    move-result-object v0
+
+    .line 7
+    const-class v1, Lcom/google/firebase/sessions/SessionGenerator;
+
+    .line 9
+    invoke-virtual {v0, v1}, Lfd/f;->j(Ljava/lang/Class;)Ljava/lang/Object;
+
+    .line 12
+    move-result-object v0
+
+    .line 13
+    const-string v1, "Firebase.app[SessionGenerator::class.java]"
+
+    .line 15
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 18
+    check-cast v0, Lcom/google/firebase/sessions/SessionGenerator;
+
+    .line 20
+    return-object v0
+.end method

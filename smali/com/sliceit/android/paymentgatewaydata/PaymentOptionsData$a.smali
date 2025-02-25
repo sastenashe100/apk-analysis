@@ -1,0 +1,184 @@
+# classes.dex
+
+.class public final Lcom/sliceit/android/paymentgatewaydata/PaymentOptionsData$a;
+.super Ljava/lang/Object;
+.source "PaymentGatewayNetworkModels.kt"
+
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/sliceit/android/paymentgatewaydata/PaymentOptionsData;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/sliceit/android/paymentgatewaydata/PaymentOptionsData;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    k = 0x3
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Landroid/os/Parcel;)Lcom/sliceit/android/paymentgatewaydata/PaymentOptionsData;
+    .registers 6
+
+    .line 1
+    const-string v0, "parcel"
+
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 6
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    .line 9
+    move-result v0
+
+    .line 10
+    new-instance v1, Ljava/util/ArrayList;
+
+    .line 12
+    invoke-direct {v1, v0}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 15
+    const/4 v2, 0x0
+
+    .line 16
+    :goto_f
+    if-eq v2, v0, :cond_1d
+
+    .line 18
+    sget-object v3, Lcom/sliceit/android/paymentgatewaydata/PaymentOptionItem;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 20
+    invoke-interface {v3, p1}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+
+    .line 23
+    move-result-object v3
+
+    .line 24
+    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 27
+    add-int/lit8 v2, v2, 0x1
+
+    .line 29
+    goto :goto_f
+
+    .line 30
+    :cond_1d
+    sget-object v0, Lcom/sliceit/android/paymentgatewaydata/PaymentModesMeta;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 32
+    invoke-interface {v0, p1}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+
+    .line 35
+    move-result-object v0
+
+    .line 36
+    check-cast v0, Lcom/sliceit/android/paymentgatewaydata/PaymentModesMeta;
+
+    .line 38
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    .line 41
+    move-result v2
+
+    .line 42
+    if-nez v2, :cond_2d
+
+    .line 44
+    const/4 p1, 0x0
+
+    .line 45
+    goto :goto_33
+
+    .line 46
+    :cond_2d
+    sget-object v2, Lcom/sliceit/android/paymentgatewaydata/InfoSheetData;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 48
+    invoke-interface {v2, p1}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+
+    .line 51
+    move-result-object p1
+
+    .line 52
+    :goto_33
+    check-cast p1, Lcom/sliceit/android/paymentgatewaydata/InfoSheetData;
+
+    .line 54
+    new-instance v2, Lcom/sliceit/android/paymentgatewaydata/PaymentOptionsData;
+
+    .line 56
+    invoke-direct {v2, v1, v0, p1}, Lcom/sliceit/android/paymentgatewaydata/PaymentOptionsData;-><init>(Ljava/util/List;Lcom/sliceit/android/paymentgatewaydata/PaymentModesMeta;Lcom/sliceit/android/paymentgatewaydata/InfoSheetData;)V
+
+    .line 59
+    return-object v2
+.end method
+
+.method public final b(I)[Lcom/sliceit/android/paymentgatewaydata/PaymentOptionsData;
+    .registers 2
+
+    .line 1
+    new-array p1, p1, [Lcom/sliceit/android/paymentgatewaydata/PaymentOptionsData;
+
+    .line 3
+    return-object p1
+.end method
+
+.method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .registers 2
+
+    .line 1
+    invoke-virtual {p0, p1}, Lcom/sliceit/android/paymentgatewaydata/PaymentOptionsData$a;->a(Landroid/os/Parcel;)Lcom/sliceit/android/paymentgatewaydata/PaymentOptionsData;
+
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method
+
+.method public bridge synthetic newArray(I)[Ljava/lang/Object;
+    .registers 2
+
+    .line 1
+    invoke-virtual {p0, p1}, Lcom/sliceit/android/paymentgatewaydata/PaymentOptionsData$a;->b(I)[Lcom/sliceit/android/paymentgatewaydata/PaymentOptionsData;
+
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method

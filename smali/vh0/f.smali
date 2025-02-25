@@ -1,0 +1,16 @@
+# classes8.dex
+
+.class public interface abstract Lvh0/f;
+.super Ljava/lang/Object;
+.source "Predicate.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation

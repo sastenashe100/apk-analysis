@@ -1,0 +1,16 @@
+# classes9.dex
+
+.class public interface abstract Lorg/webrtc/CapturerObserver;
+.super Ljava/lang/Object;
+.source "CapturerObserver.java"
+
+
+# virtual methods
+.method public abstract onCapturerStarted(Z)V
+.end method
+
+.method public abstract onCapturerStopped()V
+.end method
+
+.method public abstract onFrameCaptured(Lorg/webrtc/VideoFrame;)V
+.end method

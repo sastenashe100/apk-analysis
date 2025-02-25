@@ -1,0 +1,46 @@
+# classes.dex
+
+.class public final Lcom/slice/android/main/common/di/l;
+.super Ljava/lang/Object;
+.source "CommonModule_ProvideCommonRepoFactory.java"
+
+# interfaces
+.implements Lhc0/b;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lhc0/b<",
+        "Lcom/slice/android/main/common/e;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method public static a(Lcom/slice/android/main/common/CommonRepositoryImpl;)Lcom/slice/android/main/common/e;
+    .registers 2
+
+    .line 1
+    sget-object v0, Lcom/slice/android/main/common/di/CommonModule;->a:Lcom/slice/android/main/common/di/CommonModule;
+
+    .line 3
+    invoke-virtual {v0, p0}, Lcom/slice/android/main/common/di/CommonModule;->d(Lcom/slice/android/main/common/CommonRepositoryImpl;)Lcom/slice/android/main/common/e;
+
+    .line 6
+    move-result-object p0
+
+    .line 7
+    invoke-static {p0}, Lhc0/d;->e(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 10
+    move-result-object p0
+
+    .line 11
+    check-cast p0, Lcom/slice/android/main/common/e;
+
+    .line 13
+    return-object p0
+.end method
